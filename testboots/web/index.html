@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="refresh" content="0;url=pages/index.html">
+<title>SB Admin 2</title>
+<script language="javascript">
+    window.location.href = "pages/index.html"
+</script>
+</head>
+<body>
+Go to <a href="pages/index.html">/pages/index.html</a>
+</body>
+</html>
+
+
+<script>
+	var sp = ['mobile', 'android', 'iphone', 'ipad'];
+	
+	for(var i in sp){
+		if(navigator.userAgent.toLowerCase().match(
+			new RegExp(sp[i])	
+		)){
+			location.href='m/main.do';
+			break;
+		}else{
+			location.href='main.do';
+			break;
+		}
+	}
+</script>
